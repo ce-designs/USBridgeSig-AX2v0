@@ -25,11 +25,11 @@ echo "Start the installation of $module_bin in $module_dir"
 mod_layout=$(modprobe --dump-modversions /lib/modules/$kernel/kernel/drivers/net/usb/asix.ko* | grep module_layout | awk '{print $1}')
 new_layout=$(modprobe --dump-modversions $source_dir/$module_bin | grep module_layout | awk '{print $1}')
 
-if [ "$((mod_layout))" -eq "$((new_layout))" ] 
+if [ "$((mod_layout))" -eq "$((new_layout))" ]
 then
 	echo "sudo install -p -m 644 $source_dir/$module_bin $module_dir"
-	sudo install -p -m 644 $source_dir/$module_bin_n $module_dir 
-
+	sudo install -p -m 644 $source_dir/$module_bin_n $module_dir
+	
 	echo "sudo depmod $kernel"
 	sudo depmod $kernel
 else
@@ -50,3 +50,4 @@ else
 	echo "The installation failed"
 fi
 echo
+
