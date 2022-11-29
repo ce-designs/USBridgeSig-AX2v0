@@ -28,10 +28,10 @@ new_layout=$(modprobe --dump-modversions $source_dir/$module_bin | grep module_l
 if [ "$((mod_layout))" -eq "$((new_layout))" ] 
 then
 	echo "sudo install -p -m 644 $module_bin $module_dir"
-	#sudo install -p -m 644 $module_bin_n $module_dir 
+	sudo install -p -m 644 $module_bin_n $module_dir 
 
 	echo "sudo depmod $kernel"
-	#sudo depmod $kernel
+	sudo depmod $kernel
 else
 	echo "module_layout NOT matching"
 	echo "existing is $mod_layout    new one is $new_layout"
