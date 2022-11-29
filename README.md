@@ -1,5 +1,22 @@
-# USBridgeSig-AX2v0
+# Building and installing
 
+This is a fork from Allo's USBridgeSig-AX2v0 driver with the addition of the install.sh and Makefile, to be able to build and install the driver on a Allo USBridge Sig using DietPi or any other Debian based OS. This eliminates the dependecy on Allo to build and provide kernel builds of this driver. Follow the steps below to download, build and install the driver.
+
+
+* Download install.sh:
+```
+wget https://raw.githubusercontent.com/ce-designs/USBridgeSig-AX2v0/master/install.sh
+```
+* Build and install the driver:
+```
+sh install.sh
+```
+* Reboot to run the driver when the installation succeeded:
+```
+sudo reboot
+```
+
+# USBridgeSig-AX2v0
 
 USBridgeSig having ASIX AX88179 Gigabit Etherenet Port. Asix Driver need to update  for USB audio streaming applications.
 
