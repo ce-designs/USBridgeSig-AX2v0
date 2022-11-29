@@ -1,5 +1,5 @@
 #KERN_DIR	= /usr/src/linux-headers-$(shell uname -r)
-KERN_DIR	= /lib/modules/$(uname -r)/build
+KERN_DIR	= /lib/modules/$(shell uname -r)/build
 PWD 		= $(shell pwd)
 
 obj-m 		= ax88179_178a.o
