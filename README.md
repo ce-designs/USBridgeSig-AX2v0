@@ -45,6 +45,6 @@ info :previous version is 0.1.4 ,  this is the updated driver source code, tesin
 
 check the version on terminal/ command mode.
 
-modinfo ax88179_178a |grep version
+modinfo ax88179_178a | grep version
 
 version:        v2.0.0
