@@ -2,7 +2,17 @@
 
 This is a fork from Allo's USBridgeSig-AX2v0 driver with the addition of the install.sh and Makefile, to be able to build and install the driver on a Allo USBridge Sig using DietPi or any other Debian based OS. This eliminates the dependecy on Allo to build and provide kernel builds of this driver. Follow the steps below to download, build and install the driver.
 
+* Install the Build Essential Package:
+  * On DietPi run the command below. Then search for the Build-Essential, select and install
+```
+dietpi-software
+```
+```
+  * On other Debian OS try (not tested!):
 
+```
+sudo apt update && sudo apt install build-essential
+```
 * Download install.sh:
 ```
 wget https://raw.githubusercontent.com/ce-designs/USBridgeSig-AX2v0/master/install.sh
