@@ -4,7 +4,7 @@ This is a fork from Allo's USBridgeSig-AX2v0 driver with the addition of the ins
 
 You will need some addition free space to install the Build Essential Package and kernel source. 
 
-Please note that I'm by no means a linux expert. For me this is just a learning excercise, so use there instructions at your own risk and do make a backup of your current OS before going down this road!!
+Please note that I'm by no means a linux expert. For me this is just a learning excercise, so use these instructions at your own risk and do make a backup of your current OS before going down this road!!
 
 ## Dependencies
 
