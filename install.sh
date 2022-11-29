@@ -3,7 +3,7 @@
 kernel=$(uname -r)
 driver="ax88179_178a"
 module_bin="$driver.ko"
-module_dir="/lib/modules/$kernel/kernel/drivers/net/usb"
+module_dir="/lib/modules/$kernel/kernel/drivers/net/usb/"
 source_dir="/usr/local/src/$driver"
 
 echo "Create working folder"
