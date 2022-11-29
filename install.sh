@@ -40,7 +40,7 @@ echo
 
 echo "Remove source files and binaries"
 echo "rm -rf $source_dir"
-rm -rf $source_dir
+#rm -rf $source_dir
 echo
 
 if [ "$((mod_layout))" -eq "$((new_layout))" ] 
