@@ -11,7 +11,7 @@ Please use this at your own risk and do make a backup of your current OS before 
 Building the driver requires the Build Essential Package, so make sure it's installed. 
 Skip this part when it is already installed.
 
- * On DietPi run the command below. Then search for the Build-Essential, select and install
+ * On DietPi run the command below. Then search for 'Build-Essential', select and install
  * ```
    dietpi-software
    ```  
