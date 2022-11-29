@@ -40,12 +40,18 @@ sudo apt install git bc bison flex libssl-dev python2
 Install
 ```text
 sudo wget https://raw.githubusercontent.com/RPi-Distro/rpi-source/master/rpi-source -O /usr/local/bin/rpi-source && sudo chmod +x /usr/local/bin/rpi-source && /usr/local/bin/rpi-source -q --tag-update
-
 ```
+
 Run
 ```text
 rpi-source
 ```
+
+Optional: remove the extracted kernel source to free up some space
+```text
+rm /root/linux-*.tar.gz
+```
+
 
 ## Building and installing
 Proceed wih the build and installation of the driver.
