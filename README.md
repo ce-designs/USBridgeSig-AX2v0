@@ -34,7 +34,7 @@ Skip this part when it is already installed.
 
 Dependencies
 ```text
-sudo apt install git bc bison flex libssl-dev python2
+sudo apt install git bc bison flex libssl-dev python2 xz-utils
 ```
 
 Install
