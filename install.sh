@@ -28,7 +28,7 @@ new_layout=$(modprobe --dump-modversions $source_dir/$module_bin | grep module_l
 if [ "$((mod_layout))" -eq "$((new_layout))" ]
 then
 	echo "sudo install -p -m 644 $source_dir/$module_bin $module_dir"
-	sudo install -p -m 644 $source_dir/$module_bin_n $module_dir
+	sudo install -p -m 644 $source_dir/$module_bin $module_dir
 	echo
 	echo "sudo depmod $kernel"
 	sudo depmod $kernel
