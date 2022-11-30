@@ -64,10 +64,8 @@ Proceed wih the build and installation of the driver.
  * ```
    sh /usr/local/src/install.sh
    ```
- * Reboot to run the driver when the installation succeeded:
- * ```
-   sudo reboot
-   ```
+ * Answer the question to reboot with yes (y).
+ * Done
 
 # USBridgeSig-AX2v0
 
