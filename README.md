@@ -16,7 +16,7 @@ Skip this part when it is already installed.
  * ```
    dietpi-software
    ```  
- * On other Debian OS try (not tested!):
+ * For any other Debian based OS try (not tested!):
  * ```
    udo apt update && sudo apt install build-essential
    ```
