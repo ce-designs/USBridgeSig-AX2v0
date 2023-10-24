@@ -2536,8 +2536,13 @@ static int ax88179_probe(struct usb_interface *intf,
 		   axdev->netdev->dev_addr[4], axdev->netdev->dev_addr[5]);
 
 	usb_set_intfdata(intf, axdev);
-	netif_napi_add(netdev, &axdev->napi, ax_poll, AX88179_NAPI_WEIGHT);
-
+	
+        if (LINUX_VERSION_CODE >= KERNEL_VERSION(6, 1, 0)) {
+ 	        netif_napi_add_weight(netdev, &axdev->napi, ax_poll, AX88179_NAPI_WEIGHT); 
+        }
+        else {
+ 	        netif_napi_add(netdev, &axdev->napi, ax_poll, AX88179_NAPI_WEIGHT); 
+	}
 	SET_NETDEV_DEV(netdev, &intf->dev);
 	ret = register_netdev(netdev);
 	if (ret != 0) {
